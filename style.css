@@ -139,7 +139,7 @@ ul li a i {
     box-shadow:  9px 9px 18px #d9d9d9, -9px -9px 18px #ffffff;
 }
 .search-box input {
-	background: white;
+	background: transparent;
 	padding: 1em 1em;
 	border: 0px;
 	color: black;
@@ -148,4 +148,37 @@ ul li a i {
 .search-box input:focus {
 	outline: none;
 	color: black;
+}
+/* Main section [blog and sidebar]*/
+.main {
+	padding: 0.5em;
+	display: flex;
+	flex-direction: row;
+	/*justify-content: center;*/
+	/*align-items: center;*/
+	gap: 0.3em;
+}
+.main .blog,
+.main .sidebar {
+	padding: 0.3em;
+}
+/* Blog */
+.main > .blog {
+	width: 70%;
+}
+/* Sidebar */
+.main > .sidebar {
+	width: 30%;
+}
+/* Responsive media queries */
+@media only screen and (max-width: 600px) {
+	.main {
+		flex-direction: column;
+		gap: 0.5em;
+     }
+     .main .blog,
+     .main .sidebar {
+     	width: 100%;
+         padding: 0em;
+     }
 }
