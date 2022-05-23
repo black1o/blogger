@@ -134,6 +134,8 @@ ul li a i {
         margin-top: 1.1rem;
 	display: flex;
 	flex-direction: row;
+        align-items: center;
+        justify-content: center;
 	padding: 0.2em 0.2em;
 	border-radius: 99px;
 	background: #ffffff;
