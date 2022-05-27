@@ -5,7 +5,7 @@
 	padding: 0;
 }
 body {
-    font-family: 'Poppins', sans-serif;
+        font-family: 'Poppins', sans-serif;
 	background: var(--bg);
 	transition: 0.5s linear;
 }
@@ -23,6 +23,10 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        /* z-index: 1; */
 }
 /* Header child */
 .header-child {
