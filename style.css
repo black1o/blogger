@@ -19,7 +19,7 @@ body {
 /* Header */
 .header {
 	background: white;
-	padding: 0.5em 0.8em;
+	padding: 0.1em 0.7em;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
