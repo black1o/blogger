@@ -194,3 +194,37 @@ ul li a i {
 .gsc-input {width: 15rem;}
 /* Hidden items */
 #BlogSearch1 > .title {display: none;}
+/* Logo (text) */
+#header-inner > .titlewrapper > .title a {
+   text-decoration: none;
+   color: #000000;
+}
+/* Logo (image) */
+.header .logo img {
+   width: 50%;
+   height: 100%;
+}
+/* Post thumbnail style */
+.main > .blog img {
+   width: 100%;
+   height: 100%;
+   margin: auto;
+   display: block;
+}
+/* Readmore style */
+.readmore a {
+   text-decoration: none;
+   color: #000000;
+   padding: 0.2em 0.3em;
+   font-family: 'Roboto Mono', monospace;
+   font-weight: 700;
+}
+.readmore a:hover {
+   color: #ffffff;
+   background: #000000;
+}
+/* Post tittle style */
+.blog h3 a { 
+   text-decoration: none; 
+   color: #000000;
+}
