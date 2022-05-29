@@ -215,14 +215,27 @@ ul li a i {
 .readmore a {
    text-decoration: none;
    color: #000000;
-   padding: 0.2em 0.3em;
+   padding: 0.2em 0.5em;
    font-family: 'Roboto Mono', monospace;
    font-weight: 700;
+   background: #000000;
 }
 .readmore a:hover {
    color: #ffffff;
-   background: #000000;
+   background: rgba (0,0,0,0.8);
 }
+.readmore a i {
+   animation: readmore 1.5s infinite ease-in-out;
+}
+@keyframes readmore {
+from {
+   opacity: 1;
+}
+to {
+   opacity: 0;
+}
+}
+
 /* Post tittle style */
 .blog h3 a { 
    text-decoration: none; 
