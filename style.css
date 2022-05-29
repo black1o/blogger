@@ -215,15 +215,11 @@ ul li a i {
 /* Readmore style */
 .readmore a {
    text-decoration: none;
-   color: #000000;
+   color: #ffffff;
    padding: 0.2em 0.5em;
    font-family: 'Roboto Mono', monospace;
    font-weight: 700;
    background: #000000;
-}
-.readmore a:hover {
-   color: #ffffff;
-   background: rgba (0,0,0,0.8);
 }
 .readmore a i {
    animation: readmore 1.5s infinite ease-in-out;
