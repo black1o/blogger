@@ -46,11 +46,17 @@ body {
     justify-content: center;
 	align-items: center;
 }
-/* Logo */
+/* Logo (text) */
 .logo {
 	font-family: 'MuseoModerno', cursive;
 	font-weight: 700;
 }
+/* Logo (image) */
+.header .logo img {
+   width: 5rem;
+   height: 100%;
+}
+
 /* Menu icon */
 .header-child .trigger {
 	display: flex;
@@ -198,11 +204,6 @@ ul li a i {
 #header-inner > .titlewrapper > .title a {
    text-decoration: none;
    color: #000000;
-}
-/* Logo (image) */
-.header .logo img {
-   width: 5rem;
-   height: 100%;
 }
 /* Post thumbnail style */
 .main > .blog img {
