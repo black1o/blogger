@@ -242,3 +242,18 @@ to {
    text-decoration: none; 
    color: #000000;
 }
+/* old , new post link */
+.home-link {display: none;}
+   #blog-pager {
+   display: flex;
+   justify-content: space-between;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+.blog-pager-newer-link, 
+.blog-pager-older-link {
+  text-decoration: none;
+  color: #000000;
+}
+/* remove subscribe link */
+.feed-links {display:none !important;}
