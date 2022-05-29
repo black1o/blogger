@@ -56,6 +56,11 @@ body {
    width: 5rem;
    height: 100%;
 }
+/* Logo (text) */
+#header-inner > .titlewrapper > .title a {
+   text-decoration: none;
+   color: #000000;
+}
 
 /* Menu icon */
 .header-child .trigger {
@@ -198,13 +203,12 @@ ul li a i {
 }
 /* Default style settings */
 .gsc-input {width: 15rem;}
+
 /* Hidden items */
 #BlogSearch1 > .title {display: none;}
-/* Logo (text) */
-#header-inner > .titlewrapper > .title a {
-   text-decoration: none;
-   color: #000000;
-}
+#Image1 h2 ,
+#LinkList2 h2 {display: none;}
+
 /* Post thumbnail style */
 .main > .blog img {
    width: 100%;
