@@ -19,7 +19,7 @@ body {
 /* Header */
 .header {
 	background: white;
-	padding: 0.1em 0.7em;
+	padding: 0.3em 0.7em;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -220,6 +220,10 @@ ul li a i {
    font-family: 'Roboto Mono', monospace;
    font-weight: 700;
    background: #000000;
+   border-radius: 3px;
+   outline: none;
+   box-shadow:  5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff;
+
 }
 .readmore a i {
    animation: readmore 1.5s infinite ease-in-out;
