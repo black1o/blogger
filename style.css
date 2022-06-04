@@ -5,29 +5,28 @@
 	padding: 0;
 }
 body {
-        font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 	background: var(--bg);
 	transition: 0.5s linear;
+	color: var(--font);
 }
 /* Dark-mode settings*/
 :root {
 	--bg: #e8ebf7;
+	--font: #000000;
 }
 .dark-mode {
 	--bg: black;
+	--font: #ffffff;
 }
 /* Header */
 .header {
-	background: white;
+	background: #ffffff;
 	padding: 0.45em 0.7em;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-        position: sticky;
-        position: -webkit-sticky;
-        top: 0;
-        /* z-index: 1; */
-        box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.50);
+    box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.50);
 }
 /* Header child */
 .header-child {
@@ -108,17 +107,17 @@ body {
 }
 
 /* List item styling & animation */
-ul {
+.full-screen-nav ul {
 	z-index: 9999;
 	position: relative;
 }
-ul li {
+.full-screen-nav ul li {
 	list-style: none;
 	text-align: center;
 	margin-bottom: 30px;
 	animation: 0.25s ease-in-out animateList forwards;
 }
-ul li:last-child {
+.full-screen-nav ul li:last-child {
 	margin-bottom: 0;
 }
 @keyframes animateList {
@@ -133,7 +132,7 @@ ul li:last-child {
 }
 
 /* Item links styles and hover effect*/
-ul li a {
+.full-screen-nav ul li a {
 	text-decoration: none;
 	color: black;
 	font-size: 1.7em;
@@ -141,21 +140,21 @@ ul li a {
 	text-transform: uppercase;
 	transition: 0.15s ease-in-out;
 }
-ul li a:hover,
-ul li a i {
+.full-screen-nav ul li a:hover,
+.full-screen-nav ul li a i {
 	color: #ffa500; /* Orange */
 }
 /* Search bar */
 .search-box {
-        margin-top: 1.1rem;
+    margin-top: 1.1rem;
 	display: flex;
-	flex-direction: row;
-        align-items: center;
-        justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 	padding: 0.2em 0.2em;
 	border-radius: 99px;
 	background: #ffffff;
-        box-shadow:  9px 9px 18px #d9d9d9, -9px -9px 18px #ffffff;
+    box-shadow:  9px 9px 18px #d9d9d9, -9px -9px 18px #ffffff;
 }
 .search-box input {
 	background: transparent;
@@ -205,10 +204,15 @@ ul li a i {
 .gsc-input {width: 15rem;}
 
 /* Hidden items */
-#BlogSearch1 > .title {display: none;}
+#BlogSearch1 .title ,
 #Image1 h2 ,
-#LinkList2 h2 {display: none;}
-
+#LinkList2 h2 ,
+#HTML1 .title ,
+#ContactForm1 .title ,
+#LinkList3 h2
+{
+	display: none;
+}
 /* Post thumbnail style */
 .main > .blog img {
    width: 100%;
@@ -240,13 +244,12 @@ to {
    opacity: 0;
 }
 }
-
 /* Post tittle style */
 .blog h3 a { 
    text-decoration: none; 
-   color: #000000;
+   color: var(--font);
 }
-/* old , new post link */
+/* Old , new post link */
 .home-link {display: none;}
    #blog-pager {
    display: flex;
@@ -261,3 +264,186 @@ to {
 }
 /* remove subscribe link */
 .feed-links {display:none !important;}
+
+/* about section */
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+.aboutMe img {
+  height: 100%;
+  width: 10em;
+  border-radius: 999px;
+  display: block;
+  margin: auto;
+}
+#LinkList2 ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 0.6em;
+}
+#LinkList2 ul li,
+#LinkList2 ul li a {
+  list-style: none;
+  color: #000000;
+  font-size: 1.2em;
+}
+/* ICONS user+tag (below post title) */
+.fn a
+{
+  text-decoration: none;
+  color: var(--font);
+}
+.tag-main a {color: #ffffff; text-decoration: none;}
+.tag-main {
+  background: #000000;
+  color: #ffffff!important;
+  border-radius: 99rem;
+  text-align: center!important;
+  padding: 0.1rem 0.5rem;
+}
+/* popular posts style */
+#PopularPosts1 {margin-top: 2em;}
+#PopularPosts1 ul li a {
+text-decoration: none;
+font-weight: bold;
+color: var(--font);
+}
+/* contact and email*/
+.bottom-section {
+display: flex;
+flex-direction: row;
+align-items: center;
+/* justify-content: center; */
+gap: 0.3;
+padding: 0.5em;
+}
+.bottom-section > div {
+width: 50%;
+}
+@media only screen and (max-width: 600px) {
+
+.bottom-section {
+
+	flex-direction: column;
+
+    }
+
+.bottom-section > div {
+
+	width: 100%;
+
+    }
+
+}
+/* contact form style */
+.contact-form-name,
+.contact-form-email,
+.contact-form-email-message
+{
+max-width: 135%;
+min-width: 135%;
+padding: 1.4em 0.5em;
+border: 0px;
+border-bottom: 1.8px solid #000000;
+color: var(--font);
+}
+/* contact form focus */
+.contact-form-name:focus ,
+.contact-form-email:focus ,
+.contact-form-email-message:focus
+{
+border: 0px;
+border-bottom: 1.8px solid #000000;
+}
+.con9 {
+font-size: 0.6em;
+font-weight: bold;
+}
+.contact-form-button {
+background: transparent;
+border: 1.5px solid #000000;
+border-radius: 0px;
+color: #000000;
+text-transform: uppercase;
+ccdisplay: flex!important;
+align-items: center!important;
+}
+.contact-form-button:hover {
+background: #000000;
+color: #ffffff;
+border: 1.5px solid #000000;
+}
+/* newsletter widget*/
+#HTML1 {
+margin-top: 1em;
+width: 235%!important;
+}
+.newsletter-main {
+display: flex
+justify-content: center;
+align-items: center;
+text-align: center;
+flex-direction: column;
+gap: 0.3em;
+padding: 1em 1em; 1em 1em;
+}
+#subscribe-form input {
+border: 1.4px solid #000000;
+padding: 0.6em 0.8em;
+background: transparent;
+font-weight: bold;
+}
+.newsletter-main form input[type=email]:focus {
+outline: none;
+}
+
+.newsletter-main form input[type=submit] {
+text-transform: uppercase;
+}
+/* footer page */
+.footer-page {
+background: #000000;
+padding: 0.5em;
+}
+#LinkList3 .widget-content ul {
+list-style: none;
+display: flex;
+gap: 0.3em;
+}
+#LinkList3 .widget-content ul li a {
+color: #ffffff;
+text-decoration: none;
+font-size: 0.7em;
+}
+#LinkList3 .widget-content ul li a:after {
+content: "|";
+}
+#LinkList3 .widget-content ul li:last-child a:after {
+
+content: ""!important;
+
+}
+/* back to top */
+.back-to-top {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #000000;
+  padding: 0.5em;
+  height: 2em;
+  width: 2em;
+  font-size: 0.8em;
+  cursor:pointer;
+  border-radius: 99px;
+  position:fixed;
+  right: 20px;
+  bottom: 20px;
+  display:none;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.50);
+}
+
