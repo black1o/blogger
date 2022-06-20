@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+/*#e8ebf7; old background little white :)*/
+/* Dark-mode settings*/
+:root {
+	--bg: #e8ebf7;
+	--font: #000000;
+	--prime: #0099ff; 
+	--main: #ffffff; 
+	--swd-neu: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff;
+}
+.dark-mode {
+	--bg: black;
+	--font: #ffffff;
+	--prime: #0099ff;
+	--main: #0099ff;
+	--swd-neu: none;
+}
+/*tit*/
